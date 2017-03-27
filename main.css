@@ -1,0 +1,19 @@
+/*
+logo and title font
+font-family: 'Inconsolata', monospace;
+
+navigation links, post content, and post title font
+font-family: 'Playfair Display', serif;
+
+post category, and comment font
+font-family: 'Ubuntu', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  font-family: 'Inconsolata', monospace;
+}
