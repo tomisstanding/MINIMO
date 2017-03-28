@@ -68,13 +68,14 @@ h2 {
 
 h5 {
   margin: 5px 0;
-  font-family: "Ubuntu Light";
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
 }
 
 #header-img {
   width: 100%;
   margin: 0 auto;
+  background-size: contain;
 }
 
 input {
@@ -105,7 +106,7 @@ p {
 
 .post-comment {
   margin: 10px 0;
-  font-family: "Ubuntu Light";
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
 }
 
