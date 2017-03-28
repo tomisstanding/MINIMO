@@ -19,13 +19,17 @@ font-family: 'Ubuntu', sans-serif;
   position: absolute;
   left: 100px;
   top: 200px;
+  top: 310px;
 }
 
 .diary {
+  width: 100%;
+  height: 500px;
   position: absolute;
   display: flex;
   flex-direction: row;
-  bottom: -250px;
+  bottom: -650px;
+  left: 70px;
 }
 
 .diary h4 {
@@ -41,10 +45,14 @@ font-family: 'Ubuntu', sans-serif;
   left: 100px;
 }
 
-.diary p {
+.diary-content {
   font-family: 'Playfair Display', serif;
-  position: relative;
-
+  width: 60em;
+  word-wrap: break-word;
+  margin-left: 100px;
+  top: 100px;
+  position: absolute;
+  display: flex;
 }
 
 footer {
@@ -54,7 +62,6 @@ footer {
   position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   text-decoration: none;
   bottom: -100%;
@@ -70,9 +77,22 @@ footer {
   padding: 10px;
 }
 
+h1 {
+  color: grey;
+}
+
+h4 {
+  color: #d9dadd
+}
+
 #header-image {
   margin: 50px 0 0 100px;
   position: absolute;
+  display: flex;
+  width: 83%;
+  height: 75%;
+  background-image: url(images/post-main.png);
+  background-size: contain;
 }
 
 #insta {
@@ -81,21 +101,23 @@ footer {
   padding: 10px;
 }
 
-#left-footer p {
+.left-footer {
+  left: 50px;
+  position: absolute;
+  display: inline-flex;
+  text-decoration: none;
+  color: grey;
   font-family: 'Playfair Display', serif;
-  flex: 1 1 auto;
 }
 
-#left-footer a {
+.left-footer a {
   text-decoration: none;
-  color: black;
-  margin-right: 500px;
-  flex: 1 1 auto;
+  color: grey;
 }
 
-li > a {
+li a {
   text-decoration: none;
-  color: black;
+  color: grey;
   display: block;
   padding: 50px;
   bottom: 100px;
@@ -111,6 +133,17 @@ li a:hover {
   position: absolute;
   display: flex;
   bottom: 500px;
+}
+
+p {
+  color: #878383;
+}
+
+.right-footer {
+  right: 50px;
+  display: inline-flex;
+  position: absolute;
+  align-items: center;
 }
 
 #title {
