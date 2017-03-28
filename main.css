@@ -14,6 +14,32 @@ font-family: 'Ubuntu', sans-serif;
   padding: 0;
 }
 
+#header-image {
+  margin: 150px 0 0 100px;
+  position: absolute;
+}
+
+.nav {
+  position: absolute;
+}
+
+.nav > li {
+  list-style-type: none;
+  display: inline;
+  justify-content: flex-end;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+}
+
 #title {
   font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  /*display: flex;*/
+
+}
+
+@media only screen and (max-width: 400px) {
+  #header-image {
+
+  }
 }
