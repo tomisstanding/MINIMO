@@ -1,177 +1,154 @@
-/*
-logo and title font
-font-family: 'Inconsolata', monospace;
-
-navigation links, post content, and post title font
-font-family: 'Playfair Display', serif;
-
-post category, and comment font
-font-family: 'Ubuntu', sans-serif;
-*/
-
 * {
-  margin: 0;
   padding: 0;
-}
-
-#comment {
-  font-family: 'Ubuntu', sans-serif;
-  position: absolute;
-  left: 100px;
-  top: 200px;
-  top: 310px;
-}
-
-.diary {
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  bottom: -650px;
-  left: 70px;
-}
-
-.diary h4 {
-  font-family: 'Ubuntu', sans-serif;
-  position: absolute;
-  left: 100px;
-}
-
-.diary h1 {
-  font-family: 'Playfair Display', serif;
-  position: absolute;
-  margin-top: 25px;
-  left: 100px;
-}
-
-.diary-content {
-  font-family: 'Playfair Display', serif;
-  width: 60em;
-  word-wrap: break-word;
-  margin-left: 100px;
-  top: 100px;
-  position: absolute;
-  display: flex;
-}
-
-footer {
-  background-color: #EDECEA;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
-  bottom: -100%;
-  left: 0;
-  overflow: hidden;
-  font-family: 'Playfair Display', serif;
-  align-content: center;
-}
-
-#facebook {
-  height: 15px;
-  width: 15px;
-  padding: 10px;
+  margin: 0;
+  max-width: 1200px;
 }
 
 h1 {
-  color: grey;
+  float: left;
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  padding: 5px 5px 5px 50px;
 }
 
-h4 {
-  color: #d9dadd
+h2 {
+  margin: 5px 0;
+  font-size: 30px;
 }
 
-#header-image {
-  margin: 50px 0 0 100px;
-  position: absolute;
-  display: flex;
-  width: 83%;
-  height: 75%;
-  background-image: url(images/post-main.png);
-  background-size: contain;
+h5 {
+  margin: 5px 0;
+  font-family: "Ubuntu Light";
+  font-size: 14px;
 }
 
-#insta {
-  height: 15px;
-  width: 15px;
-  padding: 10px;
+#header-img {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.left-footer {
-  left: 50px;
-  position: absolute;
-  display: inline-flex;
-  text-decoration: none;
-  color: grey;
+/* NAV */
+
+ul#nav {
   font-family: 'Playfair Display', serif;
-}
-
-.left-footer a {
+  padding: 10px 0;
+  margin: 40px;
+  text-align: right;
   text-decoration: none;
-  color: grey;
 }
 
-li a {
+li {
+  display: inline;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+}
+
+a, #nav{
   text-decoration: none;
-  color: grey;
-  display: block;
-  padding: 50px;
-  bottom: 100px;
+  color: gray;
+  margin: 5px;
 }
 
-li a:hover {
-    color: grey;
-    text-decoration: none;
-    display: block;
+a:hover {
+  text-decoration: underline;
 }
 
-.nav {
-  position: absolute;
-  display: flex;
-  bottom: 500px;
+/* POSTS */
+
+section {
+  color: gray;
+  font-family: 'Playfair Display', serif;
+  margin: 50px auto;
+  width: 90%;
 }
 
 p {
-  color: #878383;
+  margin: 10px 0;
 }
 
-.right-footer {
-  right: 50px;
-  display: inline-flex;
-  position: absolute;
-  align-items: center;
-}
-
-#title {
-  font-family: 'Inconsolata', monospace;
-  font-size: 30px;
+.container {
   display: flex;
-  margin: 100px 0 0 100px;
-  font-weight: normal;
+  margin: 0 auto;
 }
 
-#twitter {
-  height: 15px;
-  width: 15px;
+.col {
+  flex: 1;
   padding: 10px;
+  margin: 10px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  font-family: 'Playfair Display', serif;
+.post-comment {
+  margin: 10px 0;
+  font-family: "Ubuntu Light";
   font-size: 14px;
-  margin: 0 50px 0 550px;
+}
+
+.post-image {
+  width: 100%;
+  margin: 0;
+}
+
+/* NEWSLETTER */
+
+#newsletter {
+  height: 150px;
+  background-color: rgba(204,204,204,.5);
+  font-size: 25px;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  width: 28%;
+  background-color : #d1d1d1;
+}
+
+/* FOOTER */
+
+#footer-container {
   display: flex;
 }
 
-@media only screen and (max-width: 400px) {
-  #header-image {
+#footer-content {
+  flex: 1;
+  padding: 35px 0 0 0;
+  margin-left: 55px;
+  text-align: left;
+}
 
+.footer-item {
+  padding-right: 10px;
+  color: gray;
+}
+
+#social {
+  flex: 1;
+  padding: 35px 35px 0 0;
+  text-align: right;
+}
+
+footer {
+  height: 100px;
+  background-color: rgba(204,204,204,.5);
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    padding: 5px 0 0 50px;
   }
+
+  .container {
+    display: block;
+  }
+
+  a, #nav{
+    padding-left: 0;
+  }
+
 }
